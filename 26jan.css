@@ -1,0 +1,225 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.sky{
+    background-image: url(sky.jpg);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
+
+.highway{
+    height: 180px;
+    width: 300%;
+    background-image: url(highway.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: road 9s linear infinite;
+    background-repeat: repeat;
+}
+
+@keyframes road {
+    100%{
+        transform: translatex(-1000px);
+    }
+}
+
+.city{
+    background-image: url(city-removebg-preview.png);
+    height: 209px;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 180px;
+    animation: flat 9s linear infinite;
+    background-repeat: repeat-x;
+}
+
+@keyframes flat {
+    100%{
+        transform: translatex(-1000px);
+    }
+}
+
+.car{
+    background-image: url(car-removebg-preview.png);
+    height: 170px;
+    width: 400px;
+    background-size: contain;
+    position: absolute;
+    left: 300px;
+    right: 0;
+    bottom: 80px;
+}
+
+.fwheel{
+    background-image: url(wheel-removebg-preview.png);
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    position: absolute;
+    left: 335px;
+    right: 0;
+    bottom: 89px;
+    animation: front .9s linear infinite;
+}
+@keyframes front {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.rwheel{
+    background-image: url(wheel-removebg-preview.png);
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    position: absolute;
+    left: 581px;
+    right: 0;
+    bottom: 89px;
+    animation: rear .9s linear infinite;
+}
+@keyframes rear {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.sun{
+    background-image: url(sun-removebg-preview.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    position: absolute;
+    left: 1200px;
+    right: 0;
+    bottom: 500px;
+    animation: sun 29s linear infinite;
+}
+
+@keyframes sun {
+    100%{
+        transform: translate(-1000px);
+    }
+}
+
+.flag{
+    background-image: url(flag-removebg-preview.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    position: absolute;
+    left: 390px;
+    right: 0;
+    bottom: 200px;
+}
+
+.gn{
+    font-size: 32px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+
+.text{
+    width: 300px;
+    height: 100px;
+    background-size: contain;
+    position: absolute;
+    left: 580px;
+    right: 0;
+    bottom: 570px;
+}
+
+@media only screen and (max-width:500px) {
+    .sky{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .highway{
+        height: 110px;
+        width: 500%;
+        background-repeat: repeat;
+    }
+
+    .city{
+        background-image: url(city-removebg-preview.png);
+        height: 158px;
+        width: 450%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 109px;
+    }
+
+    .car{
+        height: 76px;
+        width: 185px;
+        background-size: contain;
+        position: absolute;
+        left: 85px;
+        right: 0;
+        bottom: 69px;
+    }
+
+    .fwheel{
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        position: absolute;
+        left: 102px;
+        right: 0;
+        bottom: 73px;
+    }
+
+    .rwheel{
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        position: absolute;
+        left: 214px;
+        right: 0;
+        bottom: 72px;
+    }
+
+    .sun{
+        width: 70px;
+        height: 70px;
+        background-size: contain;
+        position: absolute;
+        left: 391px;
+        right: 0;
+        bottom: 467px;    
+        animation: sun 29s linear infinite;
+    }
+
+    @keyframes sun {
+        100%{
+            transform: translate(-200px);
+        }
+    }
+
+
+    .flag{
+        width: 120px;
+        height: 120px;
+        background-size: contain;
+        position: absolute;
+        left: 118px;
+        right: 0;
+        bottom: 116px;
+    }
+}
